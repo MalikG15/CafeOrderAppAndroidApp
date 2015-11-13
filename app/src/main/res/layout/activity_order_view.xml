@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.lawrence.cafeorderapp.OrderView">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/order_view"
+        android:layout_gravity="center_horizontal"
+        android:choiceMode="singleChoice"
+        android:listSelector="#ffffff00" />
+
+    <Button
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:text="Remove Item from Order"
+        android:id="@+id/remove"
+        android:layout_gravity="center_horizontal"
+        android:onClick="removeOrder" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phone_number"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:id="@+id/place_order"
+        android:layout_gravity="center_horizontal"
+        android:onClick="addCustomerInfo" />
+
+</LinearLayout>
